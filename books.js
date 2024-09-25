@@ -39,12 +39,14 @@ async function renderBooks(filter) {
          ${book.title}
        </div>
        <div class="book__ratings">
-         ${ratingsHTML(book.rating)}  // Call a helper function to render the stars for the rating.
+         ${ratingsHTML(book.rating)}  
        </div>
        <div class="book__price">
-          ${priceHTML(book.originalPrice, book.salePrice)} // Call another helper function to render the price.
+          ${priceHTML(book.originalPrice, book.salePrice)} 
       </div>
      </div>`
+     // Call a helper function to render the stars for the rating.
+     // Call another helper function to render the price.
   }).join(''); // Join all generated HTML into a single string.
 
   // Insert the generated HTML into the booksWrapper to display it on the page.
